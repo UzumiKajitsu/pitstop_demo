@@ -19,7 +19,7 @@ spec:
         version: v1
     spec:
       containers:
-      - image: maildev/maildev:1.1.0
+      - image: chien2024/maildev:1.1.0
         imagePullPolicy: IfNotPresent
         name: mailserver
         ports:
