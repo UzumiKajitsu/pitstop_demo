@@ -60,7 +60,7 @@ metadata:
   name: rabbitmq
   namespace: pitstop
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: "http-admin"
     port: 15672
@@ -68,6 +68,8 @@ spec:
     nodePort: 30001
   - name: "data"
     port: 5672
+  selector:
+    app: rabbitmq
     targetPort: 5672
   selector:
     app: rabbitmq
