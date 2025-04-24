@@ -42,7 +42,7 @@ spec:
   type: LoadBalancer
   ports:
   - name: "http-5200"
-    port: 5200
+    port: 80
     targetPort: 5200
     nodePort: 30007
   selector:
