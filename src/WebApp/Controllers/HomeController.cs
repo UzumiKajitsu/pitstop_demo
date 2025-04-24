@@ -2,19 +2,19 @@
 
 public class HomeController : Controller
 {
-    [HttpGet]
+    [HttpGet,HttpHead]
     public IActionResult Index()
     {
         return View();
     }
 
-    [HttpGet]
+    [HttpGet,HttpHead]
     public IActionResult About()
     {
         return View();
     }
 
-    [HttpGet]
+    [HttpGet,HttpHead]
     public IActionResult Error()
     {
         return View();
